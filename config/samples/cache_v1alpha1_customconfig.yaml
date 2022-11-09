@@ -1,0 +1,8 @@
+apiVersion: cache.mtcil.com/v1alpha1
+kind: CustomConfig
+metadata:
+  name: customconfig-sample
+spec:
+  # Add fields here
+  key: foo
+  value: bar

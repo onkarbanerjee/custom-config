@@ -1,0 +1,20 @@
+# permissions for end users to view customconfigs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: customconfig-viewer-role
+rules:
+- apiGroups:
+  - cache.mtcil.com
+  resources:
+  - customconfigs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cache.mtcil.com
+  resources:
+  - customconfigs/status
+  verbs:
+  - get
